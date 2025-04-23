@@ -1,0 +1,25 @@
+.scrollable-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .scrollable-items {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .scrollable-items .item {
+    flex: 0 0 auto;
+    width: 200px; /* Adjust as needed */
+    text-align: center;
+  }
+  
+  .centered-image {
+    width: 60%; /* Makes the image 60% of its original size */
+    margin: 0 auto;
+    display: block;
+  }
