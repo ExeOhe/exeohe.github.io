@@ -1,9 +1,12 @@
 .scrollable-container {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto; /* Centers the container horizontally */
+  text-align: center; /* Centers the content inside the container */
+  display: flex;
+  flex-direction: column; /* Ensures items stack vertically if needed */
+  align-items: center; /* Centers the scrollable items horizontally */
+}
   
   .scrollable-items {
     display: flex;
