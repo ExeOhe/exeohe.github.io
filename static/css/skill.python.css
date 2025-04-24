@@ -17,12 +17,22 @@
   
   .scrollable-items .item {
     flex: 0 0 auto;
-    width: 200px; /* Adjust as needed */
+    width: 300px; /* Adjust as needed */
     text-align: center;
   }
   
   .centered-image {
-    width: 60%; /* Makes the image 60% of its original size */
+    width: 100%; /* Makes the image 60% of its original size */
     margin: 0 auto;
     display: block;
+  }
+
+  .figure figcaption {
+    font-size: 100%;
+    text-align: center; /* Centers the caption text */
+    margin: 0 auto; /* Centers the figure block */
+  }
+  .figure img {
+    max-width: 100%; /* Ensures the image does not exceed the width of its container */
+    height: auto; /* Maintains aspect ratio */
   }
