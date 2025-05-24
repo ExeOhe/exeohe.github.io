@@ -1,0 +1,42 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore node_modules (if using Node.js)
+node_modules/
+
+# Ignore SENSITIVE environment files
+.env
+
+# Ignore virtual environment directories
+venv/
+myportfolio-venv/
+
+# Ignore other virtual environment directories
+env/
+
+# Ignore compiled files
+*.class
+*.o
+*.out
+
+# Ignore temporary files
+*.tmp
+*.swp
+
+# Flask session files
+flask_session/
+
+# Cookies
+cookies.txt
+
+# Hide AI Logic 
+main2.py
