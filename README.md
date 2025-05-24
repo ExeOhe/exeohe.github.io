@@ -3,7 +3,7 @@
 exeohe.pythonanywhere.com
 
 # Warning for Git-Source-Scalpers!
-I have Disabled Git History to Prevent AI logic from being exposed for formal licencing & monetization purposes
+I have Disabled Git History Prior to AI Logic Migration to Prevent AI logic from being exposed for formal licencing & monetization purposes
 
 # SKills this Project Implimented:
 1. ***Front end UI/UX development***: HTML/CSS for styling, JavaScript for interactivity and asycronous communication (sending prompt responses to flask from front end)
