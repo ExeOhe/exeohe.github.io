@@ -1,5 +1,11 @@
 from flask import Flask, render_template
+import os
+from dotenv import load_dotenv
 
+# Load environment variables from .env
+load_dotenv()
+
+# Run Flask Application
 app = Flask(__name__)
 
 @app.route('/')
