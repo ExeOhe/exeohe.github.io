@@ -8,6 +8,12 @@ load_dotenv()
 # Run Flask Application
 app = Flask(__name__)
 
+#Define General Routes
+
+@app.route('/favicon.ico')
+def favicon():
+    return '', 204
+
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -23,6 +29,8 @@ def skill_js():
 @app.route('/skill/python')
 def skill_python():
     return render_template('html/skill.python.html')
+
+
 
 # Import and register AI/chatbot route
 import main2  # This will add /chat to the same app
