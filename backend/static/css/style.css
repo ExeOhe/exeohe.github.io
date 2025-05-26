@@ -140,7 +140,7 @@ footer {
 .ai-msg {
 }
 
-a,
+nav, a,
 a:visited {
     color: #00ff6a; /* or your preferred link color */
     text-decoration: none;
