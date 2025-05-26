@@ -26,9 +26,9 @@ def home():
 def skill_webdev():
     return render_template('html/skill.webdev.html')
 
-@app.route('/skill/js')
-def skill_js():
-    return render_template('html/skill.js.html')
+@app.route('/skill/ai')
+def skill_ai():
+    return render_template('html/skill.ai.html')
 
 @app.route('/skill/proglang')
 def skill_proglang():
