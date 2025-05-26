@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExeOhe: Portfolio Website</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/selfie.jpg') }}" type="image/jpeg">
 </head>
 <body>
     <header>
@@ -66,9 +67,9 @@
     <section>
         <h2>My Skills and Applicable Certications</h2>
         <ul>
-            <li><a href="{{ url_for('skill_webdesign') }}">Web Design</a></li>
+            <li><a href="{{ url_for('skill_webdev') }}">Web Developmemnt (Frontend & Backend)</a></li>
             <li><a href="{{ url_for('skill_js') }}">JavaScript</a></li>
-            <li><a href="{{ url_for('skill_proglang') }}">Python</a></li>
+            <li><a href="{{ url_for('skill_proglang') }}">Programming Languages</a></li>
         </ul>
     </section>
     <footer>

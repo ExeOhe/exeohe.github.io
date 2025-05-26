@@ -18,9 +18,9 @@ def favicon():
 def home():
     return render_template('index.html')
 
-@app.route('/skill/webdesign')
-def skill_webdesign():
-    return render_template('html/skill.webdesign.html')
+@app.route('/skill/webdev')
+def skill_webdev():
+    return render_template('html/skill.webdev.html')
 
 @app.route('/skill/js')
 def skill_js():
