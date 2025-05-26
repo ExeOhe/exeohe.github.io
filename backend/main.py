@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 import os
 from dotenv import load_dotenv
 
@@ -12,7 +12,11 @@ app = Flask(__name__)
 
 @app.route('/favicon.ico')
 def favicon():
-    return '', 204
+    return send_from_directory(
+        os.path.join(app.root_path, 'static', 'images'),
+        'selfie.jpg',
+        mimetype='image/jpeg'
+    )
 
 @app.route('/')
 def home():
