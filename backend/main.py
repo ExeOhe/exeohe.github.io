@@ -26,9 +26,9 @@ def skill_webdesign():
 def skill_js():
     return render_template('html/skill.js.html')
 
-@app.route('/skill/python')
-def skill_python():
-    return render_template('html/skill.python.html')
+@app.route('/skill/proglang')
+def skill_proglang():
+    return render_template('html/skill.proglang.html')
 
 
 
