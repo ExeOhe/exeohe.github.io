@@ -44,5 +44,4 @@ import main2  # This will add /chat to the same app
 # to run locally with "python3 main.py" command
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5500)
-
+    app.run(debug=True, port=5501)

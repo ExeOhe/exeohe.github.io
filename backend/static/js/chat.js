@@ -3,9 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const userInput = document.getElementById('user-input');
     const chatHistory = document.getElementById('chat-history');
 
+    // Listen for form submission
     chatForm.addEventListener('submit', function(e) {
         e.preventDefault(); // Prevent form from reloading the page
 
+        // Get user input and clear the input field
         const message = userInput.value.trim();
         if (!message) return;
 
@@ -18,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ message: message })
         })
+        // Handle the response from the backend
         .then(response => response.json())
         .then(data => {
             // Display AI's response
