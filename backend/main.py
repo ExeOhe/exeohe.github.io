@@ -39,6 +39,10 @@ def skill_proglang():
 # Import and register AI/chatbot route
 import main2  # This will add /chat to the same app
 
+# This will ONLY Run Flask If Locally
+# Keep this at the end
+# to run locally with "python3 main.py" command
+
 if __name__ == "__main__":
     app.run(debug=True, port=5500)
 
