@@ -1,4 +1,5 @@
 from flask import Flask, render_template, send_from_directory
+from flask_session import Session
 import os
 from dotenv import load_dotenv
 
@@ -7,6 +8,9 @@ load_dotenv()
 
 # Run Flask Application
 app = Flask(__name__)
+app.secret_key = os.getenv("FLASK_SESSION_SECRET_KEY")
+app.config['SESSION_TYPE'] = 'filesystem'
+Session(app)
 
 #Define General Routes
 
@@ -34,14 +38,13 @@ def skill_ai():
 def skill_proglang():
     return render_template('html/skill.proglang.html')
 
-
-
-# Import and register AI/chatbot route
-import main2  # This will add /chat to the same app
+# Register AI/chatbot blueprint
+from main2 import ai_bp
+app.register_blueprint(ai_bp)
 
 # This will ONLY Run Flask If Locally
 # Keep this at the end
 # to run locally with "python3 main.py" command
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5501)
+    app.run(debug=True, port=5000)
