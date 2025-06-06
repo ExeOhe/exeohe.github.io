@@ -1,7 +1,7 @@
 const container = document.querySelector('.scrollable-container');
 let scrollAmount = 0;
 const scrollStep = 1;
-const scrollDelay = 100;
+const scrollDelay = 20;
 const fadeDuration = 500; // ms, should match your CSS transition
 
 function autoScroll() {
