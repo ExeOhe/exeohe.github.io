@@ -32,24 +32,5 @@
         </figure>
       </div>
     </div>
-    <script>
-      // Auto-scroll the scrollable-items container horizontally
-      const container = document.querySelector('.scrollable-container');
-      let scrollAmount = 0;
-      const scrollStep = 2; // pixels per frame
-      const scrollDelay = 20; // ms per frame
-
-      function autoScroll() {
-        if (container) {
-          scrollAmount += scrollStep;
-          if (scrollAmount > container.scrollWidth - container.clientWidth) {
-            scrollAmount = 0; // Reset to start
-          }
-          container.scrollLeft = scrollAmount;
-          setTimeout(autoScroll, scrollDelay);
-        }
-      }
-      autoScroll();
-    </script>
 </body>
 </html>
