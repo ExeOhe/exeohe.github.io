@@ -1,17 +1,17 @@
 .scrollable-container {
   overflow-x: auto;
-  white-space: nowrap;
   padding: 1em 0;
 }
 
 .scrollable-items {
   display: flex;
   gap: 2em;
+  justify-content: center; /* Center items horizontally */
 }
 
 .item {
   flex: 0 0 auto;
-  width: 300px; /* Adjust as needed */
+  width: 300px;
   text-align: center;
 }
 

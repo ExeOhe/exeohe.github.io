@@ -18,21 +18,38 @@
       <section>
        <h2>Python Skills</h2>
       </section>
-    <div class="scrollable-container">
-        <div class="scrollable-items">
-          <div class="item">
-           <figure class="figure">
-           <img src="/static/images/PCEP_example_jpg.jpg" alt="PCEP - Python Certified Entry-Level Programmer" class="centered-image">
-           <figcaption>PCEP - Python Certified Entry-Level Programmer</figcaption>
-           </figure>
-          </div>
-          <div class="item">
-           <figure class="figure">
-           <img src="/static/images/PCAP_example_jpg.jpg" alt="PCAP - Python Certified Associate Programmer" class="centered-image">
-           <figcaption>PCAP - Python Certified Associate Programmer</figcaption>
-          </figure>
-          </div>
-         </div>
+    <div class="skills-grid">
+      <div class="item">
+        <figure class="figure">
+          <img src="/static/images/PCEP_example_jpg.jpg" alt="PCEP - Python Certified Entry-Level Programmer" class="centered-image">
+          <figcaption>PCEP - Python Certified Entry-Level Programmer</figcaption>
+        </figure>
       </div>
+      <div class="item">
+        <figure class="figure">
+          <img src="/static/images/PCAP_example_jpg.jpg" alt="PCAP - Python Certified Associate Programmer" class="centered-image">
+          <figcaption>PCAP - Python Certified Associate Programmer</figcaption>
+        </figure>
+      </div>
+    </div>
+    <script>
+      // Auto-scroll the scrollable-items container horizontally
+      const container = document.querySelector('.scrollable-container');
+      let scrollAmount = 0;
+      const scrollStep = 2; // pixels per frame
+      const scrollDelay = 20; // ms per frame
+
+      function autoScroll() {
+        if (container) {
+          scrollAmount += scrollStep;
+          if (scrollAmount > container.scrollWidth - container.clientWidth) {
+            scrollAmount = 0; // Reset to start
+          }
+          container.scrollLeft = scrollAmount;
+          setTimeout(autoScroll, scrollDelay);
+        }
+      }
+      autoScroll();
+    </script>
 </body>
 </html>
