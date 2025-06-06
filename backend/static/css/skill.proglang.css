@@ -51,3 +51,8 @@
   font-size: 1.1em;
   font-weight: bold;
 }
+
+.scroll-fade {
+  transition: opacity 0.5s;
+  opacity: 0;
+}
