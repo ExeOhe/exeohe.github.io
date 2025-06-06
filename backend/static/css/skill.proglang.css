@@ -1,38 +1,34 @@
 .scrollable-container {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto; /* Centers the container horizontally */
-  text-align: center; /* Centers the content inside the container */
-  display: flex;
-  flex-direction: column; /* Ensures items stack vertically if needed */
-  align-items: center; /* Centers the scrollable items horizontally */
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 1em 0;
 }
-  
-  .scrollable-items {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding: 10px;
-  }
-  
-  .scrollable-items .item {
-    flex: 0 0 auto;
-    width: 300px; /* Adjust as needed */
-    text-align: center;
-  }
-  
-  .centered-image {
-    width: 100%; /* Makes the image 60% of its original size */
-    margin: 0 auto;
-    display: block;
-  }
 
-  .figure figcaption {
-    font-size: 100%;
-    text-align: center; /* Centers the caption text */
-    margin: 0 auto; /* Centers the figure block */
-  }
-  .figure img {
-    max-width: 100%; /* Ensures the image does not exceed the width of its container */
-    height: auto; /* Maintains aspect ratio */
-  }
+.scrollable-items {
+  display: flex;
+  gap: 2em;
+}
+
+.item {
+  flex: 0 0 auto;
+  width: 300px; /* Adjust as needed */
+  text-align: center;
+}
+
+.centered-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.figure figcaption {
+  font-size: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.figure img {
+  max-width: 100%;
+  height: auto;
+}
