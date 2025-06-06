@@ -40,3 +40,14 @@
   max-width: 100%;
   height: auto;
 }
+
+.skill-group {
+  margin-bottom: 2em;
+}
+
+.skill-group h4 {
+  margin-bottom: 0.5em;
+  color: #a643f1;
+  font-size: 1.1em;
+  font-weight: bold;
+}

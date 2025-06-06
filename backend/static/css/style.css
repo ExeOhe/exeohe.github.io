@@ -36,7 +36,7 @@ header h1, h1, h2 {
     justify-content: center; /* Optional: centers vertically if header has fixed height */
 }
 
-h3{
+h3, h4 {
         color: white;
     text-align: center;
     font-size: 1.5rem;
