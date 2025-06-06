@@ -146,28 +146,3 @@ a:visited {
     color: #00ff6a; /* or your preferred link color */
     text-decoration: none;
 }
-
-.scrollable-container {
-  overflow-x: auto;
-  white-space: nowrap;
-  padding: 1em 0;
-}
-
-.scrollable-items {
-  display: flex;
-  gap: 2em;
-}
-
-.item {
-  flex: 0 0 auto;
-  width: 250px;
-  text-align: center;
-}
-
-.centered-image {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-}
-
