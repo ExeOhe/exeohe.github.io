@@ -34,9 +34,9 @@ def skill_webdev():
 def skill_ai():
     return render_template('html/skill.ai.html')
 
-@app.route('/skill/proglang')
-def skill_proglang():
-    return render_template('html/skill.proglang.html')
+@app.route('/skill/backenddev')
+def skill_backenddev():
+    return render_template('html/skill.backenddev.html')
 
 # Register AI/chatbot blueprint
 from main2 import ai_bp
