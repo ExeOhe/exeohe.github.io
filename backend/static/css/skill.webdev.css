@@ -2,6 +2,7 @@
   overflow-x: auto;
   white-space: nowrap;
   width: 100%;
+  padding-bottom: 1em;
 }
 
 .scrollable-items {
@@ -19,15 +20,17 @@
 
 .item {
   flex: 0 0 auto;
-  width: 300px;
+  width: 300px; /* Larger item width for bigger images */
   text-align: center;
 }
 
 .centered-image {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 100%; /* Fill the .item width */
   height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .figure figcaption {

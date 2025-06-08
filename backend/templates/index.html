@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,60 +20,62 @@
             </ul>
         </nav>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="{{ url_for('static', filename='images/selfie.jpg') }}" alt="Profile Picture" class="profile-pic">
-        <h3>Jacob Snyder</h3>
-        <ul>
-        <p>ElloaH yam amean sai acobaJ nyderaS, ai oag yab xeaE heaO.</p>
-        <br>
-        <li>I am a passionate alumni / developer with an inherent euphoria for AI, the Blockchain and life-changing-software/technology!</li>
-        <br>
-        <li>I come from Pennsylvania and I am currently studying Computer Science at Regent University online.</li>
-        <br>
-        <li>I am excited to share my work and projects with you, and I am open to collaborations on open source projects!</li>
-        <br>
-        <p>Feel free to explore my projects and reach out if you have any questions!</p>
-        </ul>
-    </section>
-    <!-- Chatbot UI: Place this after your About Me <ul> -->
-    <section id="chatbot">
-        <h2>Ask My AI Assistant</h2>
-        <form id="chatbot-form">
-            <input type="text" id="user-input" placeholder="Let Your Mind Run Wild..." required>
-            <button type="submit">Send</button>
-        </form>
-        <div id="chat-history"></div>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <h3>Portfolio Website</h3>
-                <p>Description: Isolated AI Logic, Ask Me About Templates or Custom Packages!
-                    Here's My Portfolio Website!.</p>
-                <a href="https://github.com/ExeOhe/exeohe.github.io">Github Portfolio Repository</a>
-            </li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <ul>
-        <li>Email: JacoSny@mail.regent.edu</li>
-        <li><a href="https://linktr.ee/exeohe">LinkTr.ee</a></li>
-        <li><a href="https://www.linkedin.com/in/jacobsnyder315/">LinkedIn</a></li>
-        <li><a href="https://github.com/ExeOhe">GitHub</a></li>
-        <li><a href="https://twitter.com/exeohe">Twitter</a></li>
-        </ul>
-    </section>
-    <section id="skills">
-        <h2>My Skills and Applicable Certications</h2>
-        <ul>
-            <li><a href="{{ url_for('skill_webdev') }}">Web Development</a></li>
-            <li><a href="{{ url_for('skill_backenddev') }}">Backend Development</a></li>
-            <li><a href="{{ url_for('skill_ai') }}">Artificial Intelligence</a></li>
-        </ul>
-    </section>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="{{ url_for('static', filename='images/selfie.jpg') }}" alt="Profile Picture" class="profile-pic">
+            <h3>Jacob Snyder</h3>
+            <ul>
+            <p>ElloaH yam amean sai acobaJ nyderaS, ai oag yab xeaE heaO.</p>
+            <br>
+            <li>I am a passionate alumni / developer with an inherent euphoria for AI, the Blockchain and life-changing-software/technology!</li>
+            <br>
+            <li>I come from Pennsylvania and I am currently studying Computer Science at Regent University online.</li>
+            <br>
+            <li>I am excited to share my work and projects with you, and I am open to collaborations on open source projects!</li>
+            <br>
+            <p>Feel free to explore my projects and reach out if you have any questions!</p>
+            </ul>
+        </section>
+        <!-- Chatbot UI: Place this after your About Me <ul> -->
+        <section id="chatbot">
+            <h2>Ask My AI Assistant</h2>
+            <form id="chatbot-form">
+                <input type="text" id="user-input" placeholder="Let Your Mind Run Wild..." required>
+                <button type="submit">Send</button>
+            </form>
+            <div id="chat-history"></div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>Portfolio Website</h3>
+                    <p>Description: Isolated AI Logic, Ask Me About Templates or Custom Packages!
+                        Here's My Portfolio Website!.</p>
+                    <a href="https://github.com/ExeOhe/exeohe.github.io">Github Portfolio Repository</a>
+                </li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <ul>
+            <li>Email: JacoSny@mail.regent.edu</li>
+            <li><a href="https://linktr.ee/exeohe">LinkTr.ee</a></li>
+            <li><a href="https://www.linkedin.com/in/jacobsnyder315/">LinkedIn</a></li>
+            <li><a href="https://github.com/ExeOhe">GitHub</a></li>
+            <li><a href="https://twitter.com/exeohe">Twitter</a></li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2>My Skills and Applicable Certications</h2>
+            <ul>
+                <li><a href="{{ url_for('skill_webdev') }}">Web Development</a></li>
+                <li><a href="{{ url_for('skill_backenddev') }}">Backend Development</a></li>
+                <li><a href="{{ url_for('skill_ai') }}">Artificial Intelligence</a></li>
+            </ul>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2025 My Portfolio</p>
     </footer>
